@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Mopack Moving and Packing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="navbar">
+  <div class="logo-container">
+    <div class="truck">
+      <div class="truck-body"><span class="m-letter">M</span></div>
+      <div class="truck-cabin"></div>
+      <div class="wheel back"></div>
+      <div class="wheel front"></div>
+    </div>
+    <div class="logo-text">
+      <h1><span class="orange">Mo</span><span class="white">vit</span></h1>
+      <p class="subtext">MOVERS</p>
+    </div>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="About.html">About Us</a>
+    <a href="Contact.html">Contact Us</a>
+  </nav>
+
+  <button class="quote-btn">GET A FREE QUOTE</button>
+</header>
+    <div class="main1">
+        <div class="slider-bg">
+          <div class="slide-bg active" style="background-image: url('https://images.pexels.com/photos/4391486/pexels-photo-4391486.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+          <div class="slide-bg" style="background-image: url('https://media.istockphoto.com/id/460758181/photo/young-couple-watching-movers-move-boxes-from-the-moving-van.jpg?s=612x612&w=0&k=20&c=7-3QH4dVWci00sDBB7K0HPTwTsNZ7tJCLEG6NM2IxWg=');"></div>
+        </div>
+      
+        
+      </div>
+      
+<div id="our_services"><h1><strong>OUR SERVICES</strong></h1></div><br><br><br>
+    
+<div id="packing">
+    <div id="packing2"></div>
+    <div id="packing1">
+    <h2><strong>Packing Services</strong></h2>
+    
+   <p>At Mopack, we understand that proper packing is the cornerstone of a successful move, therefore, we offer customized
+     packing solutions for unique moves, ensuring that our customers belongings are 
+    packed according to their preferences and the nature of the items. We use high-quality packing materials like 
+    sturdy boxes, bubble wrap, and foam peanuts to protect our customer's possessions during transit. Our systematic 
+    labeling system simplifies the unpacking process, ensuring no misplacement. We also take special care for fragile 
+    items, such as glassware, electronics, artwork, and antiques, using additional padding and custom crating to ensure 
+    their secure packing. Our goal is to deliver your belongings in the same condition as the old one.</p>
+    
+</div>
+</div>
+<div id="Services">
+<div id="loading">
+    <div><i class="bi bi-box2-fill"></i></div><br>
+    <div id="loading1">
+    <h2><strong>Loading Services</strong></h2>
+    <p>Our skilled loading crew uses the newest tools to securely handle objects of all shapes and sizes. 
+        To ensure your things' safety throughout transit, we take precautions 
+         and offer specialized handling for those that need special handling instructions.</p></div>
+    
+</div>
+
+<div id="transportation">
+    <div><i class="bi bi-truck-front-fill"></i></i></div>
+    <div id="transportation2">
+    <h2><strong>Transportation Services</strong></h2>
+    <p>Mopack has modern fleet, experienced drivers, and real-time tracking system that ensure smooth transportation. 
+        We offer flexible scheduling options and expertise for long-distance moves, ensuring safe arrivals 
+        in all road conditions. </p></div>
+</div>
+<div id="unpacking">
+    <div id="unpacking1"></div>
+    <div id="unpacking2">
+    <h2><strong>Unpacking Services</strong></h2>
+    <p>Our team offers comprehensive unpacking services, including complete organization, debris removal, assembly
+      services for furniture, organization assistance, and customized solutions. We also provide assembly services
+       for furniture and other items post-move.</p></div>
+
+
+    </div>
+
+    
+    <footer>
+        
+          <p>&copy; 2024 Mopack packing and moving Company. All Rights Reserved.</p>
+     
+      </footer> 
+      <script>
+        let currentBg = 0;
+        const bgSlides = document.querySelectorAll('.slide-bg');
+      
+        function showBgSlide(index) {
+          bgSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) slide.classList.add('active');
+          })
+        }
+      
+        function nextBgSlide() {
+          currentBg = (currentBg + 1) % bgSlides.length;
+          showBgSlide(currentBg);
+        }
+      
+        setInterval(nextBgSlide, 5000);
+      </script>
+    
+    </body>
+    </html>
