@@ -1,4 +1,10 @@
+
+
+
 /* Navbar container */
+
+
+
 .navbar {
   display: flex;
   align-items: center;
@@ -217,7 +223,7 @@
 /* Hero Section */
 .hero-section {
   position: relative;
-  background: url('Packers-image5.avif') center center/cover no-repeat;
+  background: url('Packers-image6.jpg') center center/cover no-repeat;
   height: 90vh; /* Full-screen look */
   display: flex;
   justify-content: center;
@@ -293,7 +299,7 @@
 }
 
 
-.main1 {
+/* .main1 {
     position: relative;
     width: 100%;
     height: 90vh;
@@ -304,51 +310,227 @@
     color: white;
     text-align: center;
   }
-  
-  .slider-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity:1;
-    z-index: 0;
+   */
+ /* .main1 {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+} */
+
+.slider-bg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slide-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-bg.active {
+  opacity: 1;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+#our_services {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#our_services h1 {
+  font-size: 2rem;
+  color: #ff6600;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* =========================
+   PACKING SECTION
+========================= */
+/* #packing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  gap: 50px;
+  background-color: #fff;
+}
+
+#packing1 {
+  flex: 1;
+}
+
+#packing1 h2 {
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+#packing1 p {
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
+#packing2 {
+  flex: 1;
+  height: 300px;
+  background: url('https://images.pexels.com/photos/7464225/pexels-photo-7464225.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover;
+  border-radius: 10px;
+} */
+
+/* =========================
+   SERVICES ICON SECTIONS
+========================= */
+
+.packing-content{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 10%;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#packing{
+  background-color: wheat;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  width: 40%;
+ 
+}
+
+.packing-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.packing-image img {
+   width: 100%;
+   height: 400px;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.packing-image img:hover {
+  transform: scale(1.03);
+}
+
+/* --- Packing Text Content --- */
+.packing-content {
+  flex: 1 1 500px;
+}
+
+.packing-content {
+  flex: 1 1 300px;
+}
+
+.packing-content h2 {
+  font-size: 1.6rem;
+  color: #ff5e14;
+ 
+}
+
+.packing-content p {
+  color: #333;
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* --- Responsive Behavior --- */
+@media (max-width: 900px) {
+  .packing-section {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .slide-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
+  .packing-content {
+    max-width: 90%;
   }
+}
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+}
+
+.services-content > div {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  flex: 1 1 350px;
+  max-width: 420px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.services-content > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.services-content h2 {
+  color: #ff5e14; /* signature orange tone */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.services-content p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.services-content i {
+  font-size: 40px;
+  color: #ff5e14;
+  background-color: rgba(255, 94, 20, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.services-content > div:hover i {
+  background-color: #ff5e14;
+  color: #fff;
+  transform: rotate(10deg);
+}
+
+
   
-  .slide-bg.active {
-    opacity: 1;
-  }
-  
-  #one {
+  /* #one {
     z-index: 1;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* dark background for readability */
+    background-color: rgba(0, 0, 0, 0.5); /* dark background for readability 
     border-radius: 10px;
   }
-  
+   */
 
     
     
 
-.main2{
-    background-image: url("Packers-image5.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("Packers-image5.avif");
 
 
     
-}
+
 #about{
     font-size:x-large;
     font-weight:bolder;
@@ -475,13 +657,13 @@
 }
 
 #Us{
-    font-size:x-large;
-    font-weight:bolder;
+    font-size:18px;
+  
     font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-left:500px;
-    margin-bottom: 100px;
+   text-align: center;   
     color:orangered;
-    padding-top: 20px; 
+   
+   
 }
 
 
@@ -589,69 +771,58 @@
 }
 
 
-
+/* Contact page styling */
 
 /* Contact Info Styling */
 
 
-.main3 {
-  text-align: center;
-  background-color: #ff6600;
-  color: white;
-  padding: 40px 0;
-  margin-bottom: 40px;
-}
 
-.main3 h1 {
+
+.contact-us  h1 {
   font-size: 2rem;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 /* Contact Details Section */
-#container4 {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+.contact-cards{
+  display:flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;;
 }
 
-#container1 h1 {
+.contact-details {
+  display: block;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.contact-details h2{
   text-align: center;
-  margin-bottom: 25px;
-  color: #222;
+  color:orangered;
+  font-size: 28px;;
 }
 
 .contact-info {
-  display: flex;
+  display:block;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+ height:150px;
   margin-bottom: 40px;
-}
-
-.info-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  flex: 1 1 300px;
-  text-align: center;
-  padding: 25px;
+  background-color:#f9f3f3;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.2s;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width:350px;
 }
 
-.info-card:hover {
-  transform: translateY(-5px);
-}
 
-.info-card h3 {
-  color: #ff6600;
-  margin-bottom: 10px;
-}
 
-.info-card h4 {
-  color: #333;
-  font-weight: 500;
-}
+
 
 /* Underline Divider */
 .under-line {
@@ -687,7 +858,7 @@
 
 .form-row {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -727,37 +898,27 @@ textarea {
 }
 
 /* Services & Working Hours */
-#container-us {
-  width: 90%;
-  max-width: 1200px;
-  margin: 60px auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+
+.summary{
+  display:flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: #222;
+  height: 300px;
 }
 
-#services, #hours {
-  flex: 1 1 400px;
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+.services{
+  text-decoration: none;
+  color:white;
+  font-size: medium;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
 }
 
-#services h2, #hours h2 {
-  color: #ff6600;
-  margin-bottom: 15px;
-}
-
-#services ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-#services li h4, #hours h4 {
-  margin-bottom: 5px;
-  color: #333;
+.services h2{
+  color:orangered;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -799,9 +960,9 @@ footer {
 
 
 #container5a{
-    background-image: url("moving_company\ photo.jpg");
-    height:400px;
-    width:400px;
+  
+    height:300px;
+    width:300px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), url("moving_company\ photo.jpg");
     margin-left: 70px;
@@ -821,8 +982,12 @@ footer {
 
 }
 #container5{
+  width:fit-content;
     display:flex;
-    gap:50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   
     
 }
 /* Container */
@@ -925,10 +1090,10 @@ footer {
 #form{
     
     background-color:  #f5ededfc;
-    padding-right: 15px;
+    /* padding-right: 15px;
     padding-left: 70px;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 100px; */
     
     height:350px;
    
